@@ -1,0 +1,102 @@
+.ct {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.desc{
+    font-family: 'LINESeedKR-Bd', sans-serif;
+    font-size: var(--font-size-sm);
+    color: aliceblue;
+}
+
+:root {
+    --font-size-lg: 5vw;
+    --font-size-md: 4vw;
+    --font-size-sm: 3vw;
+  }
+  
+  h1 {
+    font-size: var(--font-size-lg);
+  }
+  
+  h2 {
+    font-size: var(--font-size-md);
+  }
+  
+  p {
+    font-size: var(--font-size-sm);
+  }
+  
+  a {
+    font-size: var(--font-size-sm);
+  }
+  
+  blockquote {
+    font-size: var(--font-size-md);
+  }
+  
+  .hero {
+    font-size: var(--font-size-lg);
+  }
+
+button.insta {
+    background: url('https://pbs.twimg.com/profile_images/1526231349354303489/3Bg-2ZsT_400x400.jpg') no-repeat;
+    background-position:center center;
+    background-size: cover;
+    border-radius: 30%;
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+}
+
+button.youtube {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7u1bVeNPNgAHCnRlibtbChuE3yvH13BjikDukp2KG8LwtgczotIo7QsHPRqX4h_3KYAU&usqp=CAU') no-repeat;
+    background-position:center center;
+    background-size: cover;
+    border-radius: 30%;
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+}
+
+.cta {
+    height: 200px;
+    position: relative;
+    border: 3px solid green;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
